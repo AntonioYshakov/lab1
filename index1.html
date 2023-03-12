@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <head>
+        <title>Лабораторная работа 1</title>
+        <style>
+            form{background: rgb(187, 220, 235);
+            padding: 60px;
+            margin: 0px;
+            position: absolute;
+                top: 80px;
+                right: 34%;}
+                h2{text-align: center;}
+                .main{
+                    position: absolute0;
+                      left: 80%;
+                      text-decoration: none;
+                      font-size: 20px;
+                }
+                a{
+                    color: rgb(15, 13, 13); 
+                    text-decoration: none;
+                }
+        </style>
+    </head>
+    <body>
+        <a href="index.html" class="main">На главную</a>
+    <h2>Заполните анкету</h2><br>
+    <form name="form1" class="formclass">
+        <p>Фамилия<input class="text" name="surname" required></p>
+        <p>Имя<input class="text" name="name"required></p>
+        <p>Отчество<input class="text" name="name2"></p>
+        <p>Дата рождения<input class="text" name="old"required></p>
+        <p>Пол<select>
+            <option value required></option>
+            <option value required>Мужской</option>
+            <option value required>Женский</option>
+        </select></p>
+        
+        <p>Семейное положение<select>
+            <option value></option>
+            <option value>Свободен/Свободна</option>
+            <option value>Женат/Замужем</option>
+        </select></p>
+        <p>Образование<select>
+            <option value></option>
+            <option value>Основное общее</option>
+            <option value>Среднее общее</option>
+            <option value>Среднее профессиональное</option>
+            <option value>Бакалавриат</option>
+            <option value>Специалитет</option>
+            <option value>Магистратура</option>
+        </select></p>
+        <p>Номер телефона<input class="text" name="number" required></p>
+        <p>Email<input class="text" name="mail"></p>
+        <p>Ваше сообщение</p>
+       <p><textarea id="text" rows="2" cols="15"></textarea></p>
+   
+    <input type="button" class="but"  value="Отправить" >
+    </form>
+    </body>
+</html>
